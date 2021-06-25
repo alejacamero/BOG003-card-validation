@@ -3,12 +3,26 @@
   <head>
     <meta charset="utf-8">
     <title>Tarjeta de crédito válida</title>
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="style.css"/>
   </head>
   <body>
     <header></header>
-    <main></main>
+    <main>
+        <h1>Validando la tarjeta</h1><br>
+        <div class="mail">
+            Name:
+            <input type="text" id="myText">
+            <p id="mostrar"></p>
+            <p>Click the button to change the value of the text field.</p>
+            <button id="traerText" onclick="myFunction()">Try it</button> 
+        </div>       
+        <span id="validador"> </span><br>
+        <span id="validador2"> </span><br>
+        <span id="validador3"> </span>
+    </main>
     <footer></footer>
-    <script src="index.js" type="module"></script>
+    <script src="index.js">
+      myFunction();
+    </script>
   </body>
 </html>

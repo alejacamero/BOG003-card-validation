@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript String Methods</h2>
+
+<p>The slice() method extract a part of a string
+and returns the extracted parts in a new string:</p>
+
+<p id="demo"></p>
+<p id="resultado"></p>
+
+<script>
+let str = "1234567891011121314151617181920";
+let ultimosDigitos = str.slice(-4);
+let caracteresRestantes = str.slice(0,-4);
+let conteoCaracteres = str.length;
+let transformacionNumerales = caracteresRestantes.replace(/[1234567890]/gi,'🙀');
+let stringEnmascarado = transformacionNumerales + ultimosDigitos;
+console.log(str)
+console.log(ultimosDigitos);
+console.log(caracteresRestantes);
+console.log(transformacionNumerales);
+console.log(stringEnmascarado);
+
+
+</script>
+
+</body>
+</html>
