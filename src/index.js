@@ -2,16 +2,17 @@ import validator from './validator.js';
 
 console.log(validator);
 console.log("hola"); 
-/* Insertar en un span un metodo de validador para probar */
-/*function myFunctionUno() {
+document.getElementById("traerText").addEventListener("click",function ejecutarFunciones() {
     let traerValue = document.getElementById("myText").value;
-    document.getElementById("validador2").innerHTML = validator.maskify(traerValue);
-    document.getElementById("validador3").innerHTML = validator.isValid(traerValue);  
-}; */
-function myFunction() {
-    let traerValue = document.getElementById("myText").value;
-     document.getElementById("mostrar").innerHTML = traerValue;
-   }
+    let validarNumero = validator.isValid(traerValue);
+    console.log(validarNumero);
+    if (validarNumero === true){
+        document.getElementById("validador2").innerHTML = "Tu número esta oculto por unos gatitos: " + validator.maskify(traerValue);
+    } else {
+        alert("Su tarjeta no es valida, intente nuevamente con un número valido")
+    };  
+} );
+
 /* 
 Hacer que la funcion isvalid reciba un argumento en string y que lo retorne y que retorne true o false
 luego hacer que la funcion maskify() reciba un argumento en tring y si es isValid es igual a true retorne el string

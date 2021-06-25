@@ -11,18 +11,14 @@
         <h1>Validando la tarjeta</h1><br>
         <div class="mail">
             Name:
-            <input type="text" id="myText">
-            <p id="mostrar"></p>
-            <p>Click the button to change the value of the text field.</p>
-            <button id="traerText" onclick="myFunction()">Try it</button> 
+            <input type="text" id="myText" placeholder="12345678">
+            <p>Haga click en el boton para validar su tarjeta y si es valido el numero sera encubierto</p>
+            <button id="traerText">Validar</button>
+            <p id="validador2"></p>
         </div>       
-        <span id="validador"> </span><br>
-        <span id="validador2"> </span><br>
-        <span id="validador3"> </span>
     </main>
     <footer></footer>
-    <script src="index.js">
-      myFunction();
+    <script src="index.js" type="module"></script>
     </script>
   </body>
 </html>
