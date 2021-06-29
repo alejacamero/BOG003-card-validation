@@ -1,30 +1,16 @@
-<!DOCTYPE html>
-<html>
-<body>
-
-<h2>JavaScript String Methods</h2>
-
-<p>The slice() method extract a part of a string
-and returns the extracted parts in a new string:</p>
-
-<p id="demo"></p>
-<p id="resultado"></p>
-
-<script>
-let str = "1234567891011121314151617181920";
-let ultimosDigitos = str.slice(-4);
-let caracteresRestantes = str.slice(0,-4);
-let conteoCaracteres = str.length;
-let transformacionNumerales = caracteresRestantes.replace(/[1234567890]/gi,'🙀');
-let stringEnmascarado = transformacionNumerales + ultimosDigitos;
-console.log(str)
-console.log(ultimosDigitos);
-console.log(caracteresRestantes);
-console.log(transformacionNumerales);
-console.log(stringEnmascarado);
-
-
-</script>
-
-</body>
+/div>
+    <main>
+        <h1>Validando la tarjeta</h1><br>
+        <div class="mail">
+            Name:
+            <input type="text" id="myText" placeholder="12345678">
+            <p>Haga click en el boton para validar su tarjeta y si es valido el numero sera encubierto</p>
+            <button id="traerText">Validar</button>
+            <p id="validador2"></p>
+        </div>       
+    </main>
+    <footer></footer>
+    <script src="index.js" type="module"></script>
+    </script>
+  </body>
 </html>
