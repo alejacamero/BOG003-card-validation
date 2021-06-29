@@ -1,72 +1,101 @@
-*{
+* {
     margin: 10px;
     padding: 10px;
     box-sizing: border-box;
 }
-.padre{
-    display: flex;
-    flex-flow: column nowrap;
-}
-   .header{
-  background:#000;
+.padre {
   display: flex;
   flex-flow: column nowrap;
+}
+.header {
+  background: #20DAD8;
+  display: flex;
+  flex-flow: column nowrap;
+}
+.menu {
+  background: #001591;
+  display: flex;
+  flex-flow: row nowrap;
+  height: 100px;
+  align-items: center;
+}
+.logo {
+   background: #E4FEDE;
+   flex:1 1 auto;
+   height: 50px;
+}
+.nav {
+   background: #E4FEDE;
+   flex:5 1 auto;
+   height: 50px; 
+}
+.social {
+   background: #E4FEDE;
+   flex:1 1 auto;
+   height: 50px; 
    }
-      .menu{
-         background: 20DAD8;
-         display: flex;
-         flex-flow: row nowrap;
-         height: 100px;
-         align-items: center;
-      }
-          .logo{
-             background: E4FEDE;
-             flex:1 1 auto;
-             height: 50px;
-          }
-          .nav{
-             background: E4FEDE;
-             flex:5 1 auto;
-             height: 50px; 
-          }
-          .social{
-             background: E4FEDE;
-             flex:1 1 auto;
-             height: 50px; 
-          }
-      .texto-principal{
-          background: E4FEDE;
-          h1{
-            background: E4FEDE;
-          }
-      }
-   .section{
-    background: 20DAD8;
+.texto-principal{
+  background: #001591;
+}
+h1 {
+  background: #E4FEDE;
+}
+      
+.section {
+   background: #20DAD8;
+   display: flex;
+}
+.articulos {
+  background: #fffb68;
+  flex:2 1 auto;
+  display: flex;
+  flex-flow: row wrap;
+}
+.article {
+  background: #20DAD8; 
+  flex:1 1 40%;
+}
+.navegacion {
+  background: #20DAD8;
+  flex:1 1  100px;
+}
+.aside {
+  background: #cce86f; 
+  flex:1 1 auto;
+}
+.publicidad {
+  background: #20DAD8;
+}
+.footer {
+  background: #20DAD8;
+  display: flex;
+  justify-content: center;
+}
+.pie {
+  background: #55294b;
+  width: 300px;
+  justify-content: center;
+}
+@media all and (max-width: 800px) {
+  .section {
+    flex-direction: column;
+  }
+  .menu {
+    flex-direction: column;
+    height: auto;
+  }
+  .aside {
     display: flex;
+    justify-content: center;
+  }
+}
+@media all and (max-width: 600px) {
+   .articulos {
+       flex-direction: column;
    }
-      .articulos{
-         background: 20DAD8;
-         flex:2 1 auto;
-         display: flex;
-         flex-flow: row wrap;
-      }
-         .article{
-            background: 20DAD8; 
-            flex:1 1 40%;
-         }
-         .navegacion{
-            background: 20DAD8;
-            flex:1 1  auto;
-         }
-      .aside{
-         background: 20DAD8; 
-         flex:1 1 auto;
-      }
-        .publicidad
-            background: 20DAD8;
-          }
-
-   .footer{
-    background:#000;
-
-   }
+}
+@media all and (max-width: 400px) {
+    .aside {
+       flex-direction: column;
+    } 
+}
