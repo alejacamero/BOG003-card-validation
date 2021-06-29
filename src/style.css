@@ -22,20 +22,27 @@
 .logo {
    background: #E4FEDE;
    flex:1 1 auto;
-   height: 50px;
+   
 }
 .nav {
    background: #E4FEDE;
    flex:5 1 auto;
-   height: 50px; 
+  
 }
 .social {
    background: #E4FEDE;
    flex:1 1 auto;
-   height: 50px; 
+   
    }
 .texto-principal{
-  background: #001591;
+  background: url(../img/backgraund-header\ perritos.jpg);
+  background-position: center;
+  background-attachment: contain;
+  background-size: cover;
+  display: flex;
+  flex-flow: column nowrap;
+ 
+
 }
 h1 {
   background: #E4FEDE;
