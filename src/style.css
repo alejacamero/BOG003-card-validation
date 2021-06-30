@@ -1,39 +1,77 @@
 * {
-    margin: 10px;
+    margin: 0px;
     padding: 10px;
     box-sizing: border-box;
+}
+.body {
+  font-family: ;
+  
+}
+
+a {
+  text-decoration: none ;
 }
 .padre {
   display: flex;
   flex-flow: column nowrap;
 }
 .header {
-  background: #20DAD8;
+  background: azure;
   display: flex;
   flex-flow: column nowrap;
+  height: 400px;
 }
 .menu {
-  background: #001591;
+  background: #20DAD8;
   display: flex;
   flex-flow: row nowrap;
-  height: 100px;
+  height: 60px;
   align-items: center;
 }
 .logo {
+  
+  flex:1 1 auto;
    
-   flex:1 1 auto;
-   
+}
+.logo a {
+color: azure;
+font-size: 30px;
+
+}
+.logo a:hover {
+color: #ffd24e;
 }
 .nav {
    
-   flex:5 1 auto;
+  flex:5 1 auto;
   
+}
+.nav a {
+color: azure;
+font-size: 11px;
+text-transform: uppercase;
+padding: 0 10px;
+letter-spacing: 2px;
+}
+.nav a:hover{
+color: #ffd24e;
 }
 .social {
    
    flex:1 1 auto;
+   display: flex;
    
-   }
+}
+.social a {
+font-size: 18px;
+color: azure;
+padding: 0 5px;
+}
+.social a:hover {
+color: #ffd24e;
+
+}
+
 .texto-principal{
   background: url(../img/backgraund-header\ perritos.jpg);
   background-position: center;
@@ -41,12 +79,18 @@
   background-size: cover;
   display: flex;
   flex-flow: column nowrap;
- 
+  padding-bottom: 20px;
+  height: 300px;
+}
 
+h2 {
+text-align: right;
 }
+
 h1 {
-  background: #E4FEDE;
+text-align: center;
 }
+  
       
 .section {
    background: #20DAD8;
@@ -61,6 +105,10 @@ h1 {
 .article {
   background: #20DAD8; 
   flex:1 1 40%;
+}
+.imagenConejito {
+  width: 340px;
+  height: 233px;
 }
 .navegacion {
   background: #20DAD8;
