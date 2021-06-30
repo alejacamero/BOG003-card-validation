@@ -2,10 +2,7 @@
     margin: 0px;
     padding: 10px;
     box-sizing: border-box;
-}
-.body {
-  font-family: ;
-  
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 a {
@@ -19,13 +16,13 @@ a {
   background: azure;
   display: flex;
   flex-flow: column nowrap;
-  height: 400px;
+  height: 425px;
 }
 .menu {
   background: #20DAD8;
   display: flex;
   flex-flow: row nowrap;
-  height: 60px;
+  height: 72px;
   align-items: center;
 }
 .logo {
@@ -35,31 +32,33 @@ a {
 }
 .logo a {
 color: azure;
-font-size: 30px;
+font-size: 40px;
 
 }
 .logo a:hover {
 color: #ffd24e;
 }
 .nav {
-   
-  flex:5 1 auto;
-  
+  flex: 1 auto;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: flex-end;
 }
 .nav a {
-color: azure;
-font-size: 11px;
-text-transform: uppercase;
-padding: 0 10px;
-letter-spacing: 2px;
+  color: azure;
+  font-size: 15px;
+  text-transform: uppercase;
+  padding: 0 10px;
+  letter-spacing: 2px;
 }
 .nav a:hover{
-color: #ffd24e;
+  color: #ffd24e;
 }
 .social {
    
-   flex:1 1 auto;
-   display: flex;
+  flex:1 1 auto;
+  display: flex;
    
 }
 .social a {
@@ -80,31 +79,41 @@ color: #ffd24e;
   display: flex;
   flex-flow: column nowrap;
   padding-bottom: 20px;
-  height: 300px;
+  height: 350px;
 }
 
 h2 {
-text-align: right;
+  margin-right: 10%;
+  width: 384px;
+  align-self: flex-end;
+  text-align: center;
+  font-size: 30px;
+  margin-top: 35px;
 }
 
 h1 {
-text-align: center;
+  align-self: center;
+  font-size: 45px;
 }
   
       
 .section {
-   background: #20DAD8;
-   display: flex;
+  display: flex;
+  height: 550px;
+  flex-flow: column;
+
 }
 .articulos {
-  background: #fffb68;
   flex:2 1 auto;
   display: flex;
   flex-flow: row wrap;
 }
-.article {
-  background: #20DAD8; 
-  flex:1 1 40%;
+.article { 
+  display: flex;
+  flex: 1 1 40%;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column;
 }
 .imagenConejito {
   width: 340px;
@@ -127,9 +136,13 @@ text-align: center;
   justify-content: center;
 }
 .pie {
-  background: #55294b;
-  width: 300px;
+  width: 400px;
   justify-content: center;
+}
+.a-footer{
+  color: azure;
+
+   
 }
 @media all and (max-width: 800px) {
   .section {
