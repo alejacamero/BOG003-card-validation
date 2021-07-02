@@ -2,7 +2,8 @@
     margin: 0px;
     padding: 10px;
     box-sizing: border-box;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 200;
 }
 
 a {
@@ -27,12 +28,14 @@ a {
 }
 .logo {
   
-  flex:1 1 auto;
-   
+  flex:2 2 auto;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
 }
 .logo a {
 color: azure;
-font-size: 40px;
+font-size: 35px;
 
 }
 .logo a:hover {
@@ -44,6 +47,7 @@ color: #ffd24e;
   align-items: center;
   flex-direction: row;
   justify-content: flex-end;
+  text-align: center;
 }
 .nav a {
   color: azure;
@@ -59,6 +63,7 @@ color: #ffd24e;
    
   flex:1 1 auto;
   display: flex;
+  color: azure;
    
 }
 .social a {
