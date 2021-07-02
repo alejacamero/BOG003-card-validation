@@ -108,19 +108,35 @@ h1 {
   height: 550px;
   flex-flow: column;
 
+
 }
 .articulos {
   flex:2 1 auto;
   display: flex;
   flex-flow: row wrap;
+  align-items: center;
+
+}
+
+.agendatuCita {
+  color: black;
+  font-size: 18px;
+  padding: 10px;
+  background: #fff239;
+  margin: 1opx;
+  display: inline-block;
+  border-radius: 4px;
+  font-weight: bold;
+  height: 50px;
 }
 .article { 
+
   display: flex;
   flex: 1 1 40%;
-  justify-content: center;
-  align-items: center;
   flex-flow: column;
-  
+  padding: 0px;
+  align-items: center;
+  justify-content: flex-start;
 }
 
 .article a {
@@ -136,6 +152,13 @@ h1 {
 
 .article a:hover {
 background: #ff9af4;
+}
+
+h3 {
+  font-size: 50px;
+  font-weight: bold;
+  text-align: center;
+  width: 472px;
 }
 
 .imagenConejito {

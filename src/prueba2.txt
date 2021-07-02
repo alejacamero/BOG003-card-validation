@@ -43,3 +43,34 @@
     </div>
      <script src="index.js" type="module"></script>
   </body>
+
+
+
+//codigo pagina 2//
+<section id="section" class="section">
+          <!-- <h1>!!Selecciona tu tipo de baño!!</h1> -->
+         <div class="articulos">
+            <article class="article">
+               <img src="../img/baño-1.png" alt="baño1">
+               <!--<a href="#">Number One</a> -->
+                 <!-- <img src="../img/perrito numberone.jpg" alt="perrito pocion uno">
+               <a href="#">Number One</a> -->
+            </article>
+            <a class= "agendatuCita" href="#">Agenda tu cita</a>
+            <article class="article">
+             <!--  <img class="imagenConejito" src="../img/conejitopremium.jpg" alt="Conejito">
+               <a href="#">Premium</a> -->
+               <h3>!!Elegiste el baño Number One!!</h3> 
+               <img src="../img/perrito numberone.jpg" alt="perrito pocion uno">
+               <!--<a href="#">Number One</a> -->
+               <a href="#">Ir a pagar</a>
+            </article>  
+         </div>
+      </section>
+
+
+
+
+
+
+
