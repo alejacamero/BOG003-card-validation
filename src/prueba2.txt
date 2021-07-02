@@ -1,0 +1,45 @@
+  <body>
+    <div class="padre">
+       <header class="header">
+         <div class="menu">
+            <div class="logo">
+               <a href="#">Bubbles Pet Shower</a>
+               <a href="#"></a><img src="../img/logo cat1.png" alt="Logo-Bubbles-Pet"></a>
+            </div>
+            <nav class="nav">
+               <a href="">Nosotros</a>
+               <a href="">Inicio</a>
+               <a href="">Contacto</a>
+            </nav>
+            <div class="social">
+               <div><a href="#"><img src="../img/logo-facebook 1.png" alt="logo-facebook"></a></div>
+               <div><a href="#"><img src="../img/Path.png" alt="logo-instagram"></a></div>
+               <div><a href="#"><img src="../img/logo-whatsapp 2.png" alt="logo-whatssap"></a></div>
+            </div>
+         </div>
+         <div class="texto-principal">
+            <h2>Bienvenido al mundo Bubbles Pet</h2>
+         </div>
+       </header>
+      </div> 
+      <section class="section">
+         <h1>!!Selecciona tu tipo de baño!!</h1>
+         <div class="articulos">
+            <article class="article">
+               <img src="../img/perrito numberone.jpg" alt="perrito pocion uno">
+               <a href="#">Number One</a>
+            </article>
+            <article class="article">
+               <img class="imagenConejito" src="../img/conejitopremium.jpg" alt="Conejito">
+               <a href="#">Premium</a>
+            </article>  
+         </div>
+      </section>
+       <footer class="footer">
+        <nav class="pie">
+           <a class="a-footer" href="#">© 2020 Landify UI Kit. All rights reserved</a>
+        </nav>
+       </footer>
+    </div>
+     <script src="index.js" type="module"></script>
+  </body>
