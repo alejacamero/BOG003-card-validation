@@ -63,14 +63,14 @@ color: #ffd24e;
    
   flex:1 1 auto;
   display: flex;
-  color: azure;
-   
+  color: azure;   
 }
 .social a {
 font-size: 18px;
 color: azure;
 padding: 0 5px;
 }
+
 .social a:hover {
 color: #ffd24e;
 
@@ -166,6 +166,12 @@ h3 {
   width: 340px;
   height: 233px;
 }
+
+.button {
+  cursor: pointer;
+
+}
+
 .navegacion {
   background: #20DAD8;
   flex:1 1  100px;
