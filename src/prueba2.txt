@@ -28,6 +28,7 @@
             <article class="article">
                <img src="../img/perrito numberone.jpg" alt="perrito pocion uno">
                <a href="#">Number One</a>
+               
             </article>
             <article class="article">
                <img class="imagenConejito" src="../img/conejitopremium.jpg" alt="Conejito">
