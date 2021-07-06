@@ -1,0 +1,334 @@
+* {
+    margin: 0px;
+    padding: 10px;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 200;
+}
+
+a {
+  text-decoration: none ;
+}
+.padre {
+  display: flex;
+  flex-flow: column nowrap;
+}
+.header {
+  background: azure;
+  display: flex;
+  flex-flow: column nowrap;
+  height: 425px;
+}
+.menu {
+  background: #20DAD8;
+  display: flex;
+  flex-flow: row nowrap;
+  height: 72px;
+  align-items: center;
+}
+.logo {
+  
+  flex:1 1 auto;
+  display: flex;
+  align-items: center;
+}
+.logo a {
+color: azure;
+font-size: 30px;
+height: 72px;
+
+}
+.logo a:hover {
+color: #ffd24e;
+}
+.nav {
+  flex: 1 auto;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: flex-end;
+  text-align: center;
+}
+.nav a {
+  color: azure;
+  font-size: 15px;
+  text-transform: uppercase;
+  padding: 0 10px;
+  letter-spacing: 2px;
+}
+.nav a:hover{
+  color: #ffd24e;
+}
+.social {
+   
+  flex:1 1 auto;
+  display: flex;
+  color: azure;   
+}
+.social a {
+font-size: 18px;
+color: azure;
+padding: 0 5px;
+}
+
+.social a:hover {
+color: #ffd24e;
+
+}
+
+.texto-principal{
+  background: url(../img/backgraund-header\ perritos.jpg);
+  background-position: center;
+  background-attachment: contain;
+  background-size: cover;
+  display: flex;
+  flex-flow: column nowrap;
+  padding-bottom: 20px;
+  height: 350px;
+}
+
+h2 {
+  margin-right: 10%;
+  width: 384px;
+  align-self: flex-end;
+  text-align: center;
+  font-size: 30px;
+  margin-top: 35px;
+}
+
+h1 {
+  align-self: center;
+  font-size: 45px;
+  font-weight: bold;
+}
+  
+      
+.section {
+  display: flex;
+  height: 1000px;
+  flex-flow: column;
+
+
+}
+.articulos {
+  flex:2 1 auto;
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+
+}
+
+.agendatuCita {
+  color: black;
+  font-size: 18px;
+  padding: 10px;
+  background: #fff239;
+  margin: 1opx;
+  display: inline-block;
+  border-radius: 4px;
+  font-weight: bold;
+  height: 50px;
+}
+.article { 
+
+  display: flex;
+  flex: 1 1 40%;
+  flex-flow: column;
+  padding: 0px;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.article a {
+  color: black;
+  font-size: 18px;
+  padding: 10px;
+  background: #fff239;
+  margin: 1opx;
+  display: inline-block;
+  border-radius: 4px;
+  font-weight: bold;
+  margin-bottom: 29px;
+}
+
+.article a:hover {
+background: #ff9af4;
+}
+
+h3 {
+  font-size: 50px;
+  font-weight: bold;
+  text-align: center;
+  width: 472px;
+}
+
+.tarjetaValidadora {
+width:  600px;
+height: 420px;
+}
+
+.articleForm {
+
+  display: flex;
+  flex: 1 1 40%;
+  flex-flow: column;
+  padding: 0px;
+  align-items: center;
+  justify-content: flex-start;
+  width: 554px;
+}
+
+.pag4-agendacita {
+  width: 963px;
+  height: 232px;
+  flex-direction: column;
+}
+  
+.articlepagina4 {
+  display: flex;
+  padding: 0px;
+  justify-content: center;
+  background: chartreuse;
+}
+
+.paginaFinal {
+  background: url(../img/pag4-agendacita.png);
+  background-position: center;
+  background-attachment: contain;
+  background-size: cover;
+  align-self: center;
+  display: flex;
+  height: 280px;
+  width: 1100px;
+  align-content: space-between;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.p-exitoso {
+  margin-left: 100px;
+  font-size: 40px;
+  color: #FFFFFF;
+  font-weight: 700;
+}
+
+.p-valor {
+  margin-left: 100px;
+  font-size: 32px;
+  color: #FFFFFF;
+  font-weight: 700;
+}
+
+.p-cita {
+  padding: 0px;
+  font-size: 35px;
+  font-weight: 700;
+  width: 628px;
+  margin-left: 50px;
+}
+
+.imagenConejito {
+  width: 340px;
+  height: 233px;
+}
+
+.button {
+  cursor: pointer;
+
+}
+
+.navegacion {
+  background: #20DAD8;
+  flex:1 1  100px;
+}
+.aside {
+  background: #cce86f; 
+  flex:1 1 auto;
+}
+.publicidad {
+  background: #20DAD8;
+}
+.footer {
+  background: #20DAD8;
+  display: flex;
+  justify-content: center;
+  margin-top: 100px;
+}
+.pie {
+  width: 400px;
+  justify-content: center;
+}
+.a-footer{
+  color: azure;
+
+}
+ /*formulario tarjeta*/
+
+.formularioTarjeta {
+  background: #FFFFFF;
+  width: 100%;
+  height: 380px;
+  padding: 1px;
+  border-radius: 10px;
+  align-items: center;
+  border: 1px solid #20DAD8;
+  margin: 30px;
+  padding: 15px;
+  padding-left: 20px;
+}
+
+label {
+
+font-size: 18px;
+}
+
+
+.inputNumero {
+ width: 95%;
+
+}
+
+.inputNombre {
+  width: 95%;
+
+}
+.grupoExpira {
+
+display: flex;
+flex-flow: row nowrap;
+align-items: center;
+}
+
+.grupo-ccv {
+
+  display: flex;
+  flex-flow: column nowrap;
+}
+
+
+
+
+@media all and (max-width: 948px) {
+  .section {
+    flex-direction: column;
+  }
+  .menu {
+    flex-direction: column;
+    height: auto;
+  }
+  .aside {
+    display: flex;
+    justify-content: center;
+  }
+}
+@media all and (max-width: 600px) {
+   .articulos {
+       flex-direction: column;
+   }
+}
+@media all and (max-width: 400px) {
+    .aside {
+       flex-direction: column;
+    } 
+}
