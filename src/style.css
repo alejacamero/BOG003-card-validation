@@ -105,7 +105,7 @@ h1 {
       
 .section {
   display: flex;
-  height: 550px;
+  height: 1000px;
   flex-flow: column;
 
 
@@ -113,7 +113,7 @@ h1 {
 .articulos {
   flex:2 1 auto;
   display: flex;
-  flex-flow: row wrap;
+  flex-flow: row nowrap;
   align-items: center;
 
 }
@@ -148,7 +148,7 @@ h1 {
   display: inline-block;
   border-radius: 4px;
   font-weight: bold;
-  margin-bottom: 98px;
+  margin-bottom: 29px;
 }
 
 .article a:hover {
@@ -160,6 +160,72 @@ h3 {
   font-weight: bold;
   text-align: center;
   width: 472px;
+}
+
+.tarjetaValidadora {
+width:  600px;
+height: 420px;
+}
+
+.articleForm {
+
+  display: flex;
+  flex: 1 1 40%;
+  flex-flow: column;
+  padding: 0px;
+  align-items: center;
+  justify-content: flex-start;
+  width: 554px;
+}
+
+.pag4-agendacita {
+  width: 963px;
+  height: 232px;
+  flex-direction: column;
+}
+  
+.articlepagina4 {
+  display: flex;
+  padding: 0px;
+  justify-content: center;
+  background: chartreuse;
+}
+
+.paginaFinal {
+  background: url(../img/pag4-agendacita.png);
+  background-position: center;
+  background-attachment: contain;
+  background-size: cover;
+  align-self: center;
+  display: flex;
+  height: 280px;
+  width: 1100px;
+  align-content: space-between;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.p-exitoso {
+  margin-left: 100px;
+  font-size: 40px;
+  color: #FFFFFF;
+  font-weight: 700;
+}
+
+.p-valor {
+  margin-left: 100px;
+  font-size: 32px;
+  color: #FFFFFF;
+  font-weight: 700;
+}
+
+.p-cita {
+  padding: 0px;
+  font-size: 35px;
+  font-weight: 700;
+  width: 628px;
+  margin-left: 50px;
 }
 
 .imagenConejito {
@@ -187,6 +253,7 @@ h3 {
   background: #20DAD8;
   display: flex;
   justify-content: center;
+  margin-top: 100px;
 }
 .pie {
   width: 400px;
@@ -195,8 +262,53 @@ h3 {
 .a-footer{
   color: azure;
 
-   
 }
+ /*formulario tarjeta*/
+
+.formularioTarjeta {
+  background: #FFFFFF;
+  width: 100%;
+  height: 380px;
+  padding: 1px;
+  border-radius: 10px;
+  align-items: center;
+  border: 1px solid #20DAD8;
+  margin: 30px;
+  padding: 15px;
+  padding-left: 20px;
+}
+
+label {
+
+font-size: 18px;
+}
+
+
+.inputNumero {
+ width: 95%;
+
+}
+
+.inputNombre {
+  width: 95%;
+
+}
+.grupoExpira {
+
+display: flex;
+flex-flow: row nowrap;
+align-items: center;
+}
+
+.grupo-ccv {
+
+  display: flex;
+  flex-flow: column nowrap;
+}
+
+
+
+
 @media all and (max-width: 948px) {
   .section {
     flex-direction: column;

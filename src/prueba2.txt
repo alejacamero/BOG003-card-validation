@@ -27,12 +27,11 @@
          <div class="articulos">
             <article class="article">
                <img src="../img/perrito numberone.jpg" alt="perrito pocion uno">
-               <a href="#">Number One</a>
-               
+               <a class="button" id="numberOne" role="button">Number One</a>
             </article>
             <article class="article">
                <img class="imagenConejito" src="../img/conejitopremium.jpg" alt="Conejito">
-               <a href="#">Premium</a>
+               <a class="button" id="premium" role="button">Premium</a>
             </article>  
          </div>
       </section>

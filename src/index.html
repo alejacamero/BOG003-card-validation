@@ -34,16 +34,57 @@
        </header>
       </div> 
       <section id="section" class="section">
-         <h1>!!Selecciona tu tipo de baño!!</h1>
+         
          <div class="articulos">
-            <article class="article">
-               <img src="../img/perrito numberone.jpg" alt="perrito pocion uno">
-               <a class="button" id="numberOne" role="button">Number One</a>
+            <article class="articleForm">
+               <form action="" id="formularioTarjeta" class="formularioTarjeta">
+                  <div class="grupo">
+                     <label for="inputNumero">Número Tarjeta</label>
+                     <input class="inputNumero" type="text" id="inputNumero" maxlength="19" autocomplete="off">
+                  </div>
+                  <div class="grupo">
+                     <label for="inputNombre">Nombre</label>
+                     <input class="inputNombre" type="text" id="inputN" maxlength="19" autocomplete="off">
+                  </div>                  
+                  <div class="flexbox">
+                     <div class="grupo expira">       
+                        <div class="grupoExpira">
+                           <label for="selectMes">Expiración</label>
+                           <div>
+                              <div class="grupo-select">
+                                 <select name="mes" id="selectMes">
+                                 <option disabled selected>Mes</option>
+                                 </select>
+                                 <i class="fas fa-angle-down"></i>
+                              </div>
+                              <div class="grupo-select">
+                                 <select name="year" id="selectyear">
+                                    <option disabled selected>Año</option>
+                                 </select>
+                                 <i class="fas fa-angle-down"></i>
+                              </div>
+                           </div>
+                           <div class="grupo-ccv">
+                              <label for="inputCVV">CCV</label>
+                              <input type="text" id="inputCVV" maxlength="3">
+                           </div>
+                        </div>
+                     </div>      
+                  </div>
+               </form>  
             </article>
             <article class="article">
-               <img class="imagenConejito" src="../img/conejitopremium.jpg" alt="Conejito">
-               <a class="button" id="premium">Premium</a>
+               <a class="button" id="premium" role="button">Validar Tarjeta</a>
+               <a href="#">Ir a pagar</a>
+            </article>
+            <article class="article">
+               <img class="tarjetaValidadora" src="../img/tarjeta validadora.png" alt="tarjeta validadora">
             </article>  
+         </div>   
+         <div class="paginaFinal">
+            <p class="p-exitoso">Pago Exitoso</p>
+            <p class="p-valor">valor $80.000</p>
+            <p class="p-cita">Nuestros asesores se comunicarán contigo para agendar tu cita</p>
          </div>
       </section>
        <footer class="footer">
