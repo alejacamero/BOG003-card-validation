@@ -63,7 +63,8 @@ color: #ffd24e;
    
   flex:1 1 auto;
   display: flex;
-  color: azure;   
+  color: azure;  
+
 }
 .social a {
 font-size: 18px;
@@ -105,7 +106,7 @@ h1 {
       
 .section {
   display: flex;
-  height: 1000px;
+  height: 1000px; la pantalla inicial es 550px
   flex-flow: column;
 
 
@@ -322,7 +323,7 @@ align-items: center;
     justify-content: center;
   }
 }
-@media all and (max-width: 600px) {
+@media all and (max-width: 600px) {  Pantalla original 948px
    .articulos {
        flex-direction: column;
    }

@@ -6,12 +6,13 @@ const validator = {
       return false
     }
   }
-  , 
+  ,
+
   maskify: function(creditCardNumber){
     let str = creditCardNumber;
     let ultimosDigitos = str.slice(-4);
     let caracteresRestantes = str.slice(0,-4);
-    let transformacionNumerales = caracteresRestantes.replace(/[1234567890]/gi,'🙀');
+    let transformacionNumerales = caracteresRestantes.replace(/[1234567890]/gi,'#');
     let stringEnmascarado = transformacionNumerales + ultimosDigitos;
     console.log(str)
     console.log(ultimosDigitos);

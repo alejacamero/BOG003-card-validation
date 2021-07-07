@@ -1,13 +1,13 @@
 * {
-    margin: 0px;
-    padding: 10px;
-    box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
-    font-weight: 200;
+  margin: 0px;
+  padding: 10px;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 200;
 }
 
 a {
-  text-decoration: none ;
+  text-decoration: none;
 }
 .padre {
   display: flex;
@@ -27,19 +27,19 @@ a {
   align-items: center;
 }
 .logo {
-  
+
   flex:1 1 auto;
   display: flex;
   align-items: center;
 }
 .logo a {
-color: azure;
-font-size: 30px;
-height: 72px;
+  color: azure;
+  font-size: 30px;
+  height: 72px;
 
 }
 .logo a:hover {
-color: #ffd24e;
+  color: #ffd24e;
 }
 .nav {
   flex: 1 auto;
@@ -60,19 +60,20 @@ color: #ffd24e;
   color: #ffd24e;
 }
 .social {
-   
-  flex:1 1 auto;
-  display: flex;
-  color: azure;   
+ 
+flex:1 1 auto;
+display: flex;
+color: azure;
+ 
 }
 .social a {
-font-size: 18px;
-color: azure;
-padding: 0 5px;
+  font-size: 18px;
+  color: azure;
+  padding: 0 5px;
 }
 
 .social a:hover {
-color: #ffd24e;
+  color: #ffd24e;
 
 }
 
@@ -100,22 +101,37 @@ h1 {
   align-self: center;
   font-size: 45px;
   font-weight: bold;
+
 }
-  
-      
-.section {
+.section1 {
   display: flex;
-  height: 1000px;
-  flex-flow: column;
-
+  flex-flow: column nowrap;
+  align-items: center;
+}
+.section2 {
+  display: none;
 
 }
+.section3 {
+  display: none;
+}
+.section4 {
+  display: none;
+}
+
 .articulos {
   flex:2 1 auto;
   display: flex;
-  flex-flow: row nowrap;
+  flex-direction: row;
   align-items: center;
+  
+}
 
+.articulos1 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 90%;
 }
 
 .agendatuCita {
@@ -148,11 +164,11 @@ h1 {
   display: inline-block;
   border-radius: 4px;
   font-weight: bold;
-  margin-bottom: 29px;
+  margin-bottom: 98px;
 }
 
 .article a:hover {
-background: #ff9af4;
+  background: #ff9af4;
 }
 
 h3 {
@@ -160,72 +176,6 @@ h3 {
   font-weight: bold;
   text-align: center;
   width: 472px;
-}
-
-.tarjetaValidadora {
-width:  600px;
-height: 420px;
-}
-
-.articleForm {
-
-  display: flex;
-  flex: 1 1 40%;
-  flex-flow: column;
-  padding: 0px;
-  align-items: center;
-  justify-content: flex-start;
-  width: 554px;
-}
-
-.pag4-agendacita {
-  width: 963px;
-  height: 232px;
-  flex-direction: column;
-}
-  
-.articlepagina4 {
-  display: flex;
-  padding: 0px;
-  justify-content: center;
-  background: chartreuse;
-}
-
-.paginaFinal {
-  background: url(../img/pag4-agendacita.png);
-  background-position: center;
-  background-attachment: contain;
-  background-size: cover;
-  align-self: center;
-  display: flex;
-  height: 280px;
-  width: 1100px;
-  align-content: space-between;
-  flex-flow: column wrap;
-  justify-content: center;
-  align-items: flex-start;
-}
-
-.p-exitoso {
-  margin-left: 100px;
-  font-size: 40px;
-  color: #FFFFFF;
-  font-weight: 700;
-}
-
-.p-valor {
-  margin-left: 100px;
-  font-size: 32px;
-  color: #FFFFFF;
-  font-weight: 700;
-}
-
-.p-cita {
-  padding: 0px;
-  font-size: 35px;
-  font-weight: 700;
-  width: 628px;
-  margin-left: 50px;
 }
 
 .imagenConejito {
@@ -241,29 +191,97 @@ height: 420px;
 .navegacion {
   background: #20DAD8;
   flex:1 1  100px;
+
 }
 .aside {
   background: #cce86f; 
   flex:1 1 auto;
+
 }
 .publicidad {
   background: #20DAD8;
+
 }
-.footer {
-  background: #20DAD8;
+
+.tarjetaValidadora {
+  width:  600px;
+  height: 420px;
+}
+  
+.articleForm {
+
   display: flex;
-  justify-content: center;
-  margin-top: 100px;
+  flex: 1 1 40%;
+  flex-flow: column;
+  padding: 0px;
+  align-items: center;
+  justify-content: flex-start;
+  width: 554px;
 }
+  
+.pag4-agendacita {
+  width: 963px;
+  height: 232px;
+  flex-direction: column;
+}
+  
+.articlepagina4 {
+  display: flex;
+  padding: 0px;
+  justify-content: center;
+  background: chartreuse;
+}
+
+.paginaFinal {
+  background: url(../img/pag4-agendacita.png);
+  background-attachment: contain;
+  background-size: cover;
+  display: flex;
+  height: 280px;
+  width: 1100px;
+  flex-flow: column wrap;
+  margin-left: 280px;
+
+}
+  
+.p-exitoso {
+  margin-left: 100px;
+  font-size: 40px;
+  color: #FFFFFF;
+  font-weight: 700;
+  }
+  
+.p-valor {
+  margin-left: 100px;
+  font-size: 32px;
+  color: #FFFFFF;
+  font-weight: 700;
+  }
+  
+.p-cita {
+  padding: 0px;
+  font-size: 35px;
+  font-weight: 700;
+  width: 628px;
+  margin-left: 50px;
+  }
+  
+.footer {
+background: #20DAD8;
+display: flex;
+justify-content: center;
+}
+
 .pie {
   width: 400px;
   justify-content: center;
 }
-.a-footer{
+.a-footer {
   color: azure;
-
+ 
 }
- /*formulario tarjeta*/
+
+/*formulario tarjeta*/
 
 .formularioTarjeta {
   background: #FFFFFF;
@@ -280,7 +298,7 @@ height: 420px;
 
 label {
 
-font-size: 18px;
+  font-size: 18px;
 }
 
 
@@ -295,9 +313,9 @@ font-size: 18px;
 }
 .grupoExpira {
 
-display: flex;
-flex-flow: row nowrap;
-align-items: center;
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
 }
 
 .grupo-ccv {
@@ -305,7 +323,6 @@ align-items: center;
   display: flex;
   flex-flow: column nowrap;
 }
-
 
 
 
@@ -323,12 +340,12 @@ align-items: center;
   }
 }
 @media all and (max-width: 600px) {
-   .articulos {
-       flex-direction: column;
-   }
+ .articulos {
+    flex-direction: column;
+ }
 }
 @media all and (max-width: 400px) {
-    .aside {
-       flex-direction: column;
-    } 
+  .aside {
+    flex-direction: column;
+  } 
 }
