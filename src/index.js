@@ -56,7 +56,7 @@ document.getElementById("validarTarjeta").addEventListener("click",function ejec
     console.log(validarNumero);
     console.log(traerValue);
     if (validarNumero === true){
-        document.getElementById("resultadoValiador").innerHTML = "Tu tarjeta número: " + validator.maskify(traerValue) + "es valida";  //la linea 55 y 59 estan usando las funciones del objeto validator, para sr usadas las veces que queramos
+        document.getElementById("resultadoValiador").innerHTML = "Tu tarjeta número: " + validator.maskify(traerValue) + " " + "   es valida";  //la linea 55 y 59 estan usando las funciones del objeto validator, para sr usadas las veces que queramos
     } else {
         alert("Su tarjeta no es valida, intente nuevamente con un número valido")
     };  
