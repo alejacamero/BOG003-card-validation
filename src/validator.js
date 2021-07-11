@@ -94,38 +94,47 @@ export default validator;
 
 let creditCardNumber ="1234567891234512456"; // Este es el ejemplo de numero que va ir en el input.
 let arrayReversado = creditCardNumber.split('').reverse();
-console.log(arrayReversado.indexOf('4'));
-console.log(0 % 2)
-
-console.log(creditCardNumber)
-console.log("longitud del array: ", arrayReversado.length);
-
 let multiplicacion = 0;
-let sumaDosDigitos = 0;
-let sumaTodos = 0;
-let sumaNumeros = function(numero, acumulador) {
+console.log("longitud del array: ", arrayReversado.length); 
+//Creamos funcion para sumar los numeros mayores de 9 y tambien para sumar todos los numeros del array inicial. 
+/*let sumaNumeros = function(numero, acumulador) { 
+  console.log("numero", numero)
   acumulador += Number(numero);
-  console.log(acumulador);
+  console.log("acumulador" , acumulador);
+} */
+/*let sumaNumeros = function(numero) { 
+  console.log("numero", numero)
+  sumaDosDigitos += Number(numero);
+  console.log("sumaDosDigitos" , sumaDosDigitos);
+} */
+let sumaNumeros = function(numero) { 
+  console.log("numero", numero)
+  sumaTodos += Number(numero);
+  console.log("sumaTodos" , sumaTodos);
 }
-
-
+//acumuladores
+let sumaTodos = 0;  
+let sumaDosDigitos = 0;
 for (var i = 1; i <= arrayReversado.length; i++) { //Que si es el numero el que le asignemos arriba q se ejecute tanta veces como numeros haya en el array
-  console.log("par", i, i % 2 === 0) 
- if (i % 2 === 0){
-  multiplicacion = i * 2;
-  console.log("*2", multiplicacion)
-  let arrayMultiplicacion = String(multiplicacion).split("");
-  console.log("esArray", arrayMultiplicacion); 
-  console.log("mayorA1", arrayMultiplicacion.length >1);
-  if (arrayMultiplicacion.length >1) {
-   for (const i of arrayMultiplicacion) {
-    sumaNumeros(i, sumaDosDigitos);
-    console.log( "sumaDosDigitos", sumaDosDigitos);
-   } 
-   sumaDosDigitos = 0;
-  }
-
- };
+    console.log("par", i, i % 2 === 0) 
+  if (i % 2 === 0){
+    multiplicacion = i * 2;
+    console.log("*2", multiplicacion)
+    let arrayMultiplicacion = String(multiplicacion).split("");
+    console.log("esArray", arrayMultiplicacion); 
+    console.log("mayorA1", arrayMultiplicacion.length >1);
+    if (arrayMultiplicacion.length >1) {
+      for (const i of arrayMultiplicacion) {
+        //sumaNumeros(i)
+        //console.log( "sumaDosDigitosFor", sumaDosDigitos);
+      } 
+      sumaDosDigitos = 0;
+    }
+  } else {
+    //sumaTodos += i //sumaTodos = sumaTodos + i es igual a el acumulado (acumulador) +  el nuevo valor que traiga la variable i 
+    sumaNumeros(i);
+    console.log ("sumaTodoselse" , sumaTodos);
+  };
  
 };
 //1  1 <= a arrayReversado = si  1 + 1 = 2
