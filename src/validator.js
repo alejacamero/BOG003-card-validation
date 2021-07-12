@@ -7,10 +7,10 @@ const validator = {
     //acumuladores
     let sumaTodos = 0;  
     let sumaDosDigitos = 0;
-    let sumaTresDigitos = 0;
-    for (var i = 1; i <= arrayReversado.length; i++) { //Que si es el numero el que le asignemos arriba q se ejecute tanta veces como numeros haya en el array 
-      if (i % 2 === 0){
-        multiplicacion = i * 2;
+    for (var i = 0; i <= arrayReversado.length - 1; i++) { //Que si es el numero el que le asignemos arriba q se ejecute tanta veces como numeros haya en el array 
+      if (i % 2 === 1){
+        let itemDelArray = arrayReversado[i];
+        multiplicacion = itemDelArray * 2;
         let arrayMultiplicacion = String(multiplicacion).split("");
         if (arrayMultiplicacion.length >1) {
           for (const i of arrayMultiplicacion) {
@@ -23,36 +23,26 @@ const validator = {
         }
       } else {
         //sumaTodos += i //sumaTodos = sumaTodos + i es igual a el acumulado (acumulador) +  el nuevo valor que traiga la variable i 
-        sumaTodos += Number(i)
-      };
-    }; 
-    let resultadoArray = String(sumaTodos).split("");
-    for (const i of resultadoArray) {
-      sumaTresDigitos += Number(i);
+        let itemDelArrayElse = arrayReversado[i];
+        sumaTodos += Number(itemDelArrayElse)
+      }
     }
-
-    if (sumaTresDigitos % 10 === 0) {
+    if (sumaTodos % 10 === 0) {
       return true;
     } else {
       return false;
-    };
+    }
   }
   ,
-  maskify: function(creditCardNumber){
+  maskify: function(creditCardNumber) {
     let str = creditCardNumber;
     let ultimosDigitos = str.slice(-4);
     let caracteresRestantes = str.slice(0,-4);
-    let transformacionNumerales = caracteresRestantes.replace(/[1234567890]/gi,'#');
+    let transformacionNumerales = caracteresRestantes.replace(/[1234567890 a-z A-Z ñ]/gi,'#');
     let stringEnmascarado = transformacionNumerales + ultimosDigitos;
-    console.log(str)
-    console.log(ultimosDigitos);
-    console.log(caracteresRestantes);
-    console.log(transformacionNumerales);
-    console.log(stringEnmascarado);
     return stringEnmascarado;
     
   }
 };
-
 
 export default validator;
